@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignIn from './components/SignIn';
 import SignUpForm from './components/signUpForm';
-import ButtonsPage from './components/ButtonsPage';
 import Choices from './components/Choices';
 import ChooseSpot from './components/ChooseSpot';
 import NoMatch from './components/NoMatch';
@@ -19,7 +18,6 @@ class App extends Component{
           <Switch>
           <Route exact path="/" component={SignIn} />
           <Route path="/SignUpForm" component={SignUpForm} />
-          <Route path="/ButtonsPage" component={ButtonsPage}/>
           <Route path="/Choices" component={Choices} />
           <Route path="/ChooseSpot" component={ChooseSpot} />
           <Route componont= {NoMatch} />

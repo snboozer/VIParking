@@ -1,45 +1,45 @@
 import React from 'react';
-import { FormControl, DropdownButton, Dropdown, InputGroup } from 'react-bootstrap'
+import { DropdownButton, Dropdown, InputGroup, Form } from 'react-bootstrap'
 
-export const Choices = () =>(
-<>
-  <InputGroup className="mb-3">
-    <DropdownButton
-      as={InputGroup.Prepend}
-      variant="outline-secondary"
-      title="Dropdown"
-      id="input-group-dropdown-1"
-    >
-      <Dropdown.Item href="#">Philadelphia</Dropdown.Item>
-      <Dropdown.Item href="#">New York</Dropdown.Item>
-      <Dropdown.Item href="#">Atlanta</Dropdown.Item>
-      <Dropdown.Divider />
-      <Dropdown.Item href="#">Separated link</Dropdown.Item>
-    </DropdownButton>
-    <FormControl aria-describedby="basic-addon1" />
-  </InputGroup>
+class Choices extends React.Component{
+state={
+  citySelect:"Philadelphia",
+  Philadelphia:["Center City"],
+    "New York":["Manhattan", "Brooklyn", "Harlem"],
+    Atlanta:["Stone Mountain", "Downtown"]
+}
+handleChange= (event) => {
+  this.setState({citySelect:event.target.value})
+}
+render(){
+  return(
+  <>
+    <Form.Group controlId="exampleForm.ControlSelect1">
+      <Form.Label>Select a City</Form.Label>
+      <Form.Control as="select" onChange={ this.handleChange } value={this.state.citySelect}>
+        <option>Philadelphia</option>
+        <option>New York</option>
+        <option>Atlanta</option>
+      </Form.Control>
+    </Form.Group>
 
-  <InputGroup>
-    <FormControl
-      placeholder="Recipient's username"
-      aria-label="Recipient's username"
-      aria-describedby="basic-addon2"
-    />
+    <InputGroup>
 
-    <DropdownButton
-      as={InputGroup.Append}
-      variant="outline-secondary"
-      title="Dropdown"
-      id="input-group-dropdown-2"
-    >
-      <Dropdown.Item href="#">Action</Dropdown.Item>
-      <Dropdown.Item href="#">Another action</Dropdown.Item>
-      <Dropdown.Item href="#">Something else here</Dropdown.Item>
-      <Dropdown.Divider />
-      <Dropdown.Item href="#">Separated link</Dropdown.Item>
-    </DropdownButton>
-  </InputGroup>
-</>
+      <DropdownButton
+        as={InputGroup.Append}
+        variant="outline-secondary"
+        title="Choose a Garage"
+        id="input-group-dropdown-2"
+      >
+        <Dropdown.Item href="#">Garage 1</Dropdown.Item>
+        <Dropdown.Item href="#">Garage 2</Dropdown.Item>
+        <Dropdown.Item href="#">Garage 3</Dropdown.Item>
+        
+      </DropdownButton>
+    </InputGroup>
+  </>
 )
+}
 
+}
 export default Choices;

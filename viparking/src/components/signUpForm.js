@@ -47,7 +47,7 @@ export const SignUpForm = () => (
       </Form.Group>
     </Form.Row>
 
-    <Button variant="primary" type="submit">
+    <Button href="/Choices" variant="light" type="submit">
       Submit
   </Button>
   </Form>
