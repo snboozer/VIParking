@@ -7,7 +7,7 @@ import Choices from './components/Choices';
 import ChooseSpot from './components/ChooseSpot';
 import NoMatch from './components/NoMatch';
 import Layout from './components/layout';
-
+import Parking from './Parking.js';
 
 class App extends Component{
   render(){
@@ -20,6 +20,7 @@ class App extends Component{
           <Route path="/SignUpForm" component={SignUpForm} />
           <Route path="/Choices" component={Choices} />
           <Route path="/ChooseSpot" component={ChooseSpot} />
+          <Route path="/Parking" component={Parking} />
           <Route componont= {NoMatch} />
           </Switch>
         </Router>
