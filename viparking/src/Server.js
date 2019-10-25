@@ -1,4 +1,8 @@
 const express = require("express");
+const app = express();
+const port = 3001;
+
+
 const bodyParser = require("body-parser");
 const graphqlHttp = require("express-graphql");
 //pull properties from object
@@ -9,7 +13,7 @@ const bcrypt = require("bcryptjs");
 const Event = require("./models/event");
 const User = require("./models/user");
 
-const app = express();
+
 
 app.use(bodyParser.json());
 
@@ -123,7 +127,7 @@ mongoose.set("useUnifiedTopology", true);
 mongoose
   .connect(MONGODB_URI, { useNewUrlParser: true })
   .then(() => {
-    app.listen(3000);
+    app.listen(3001);
   })
   .catch(err => {
     console.log(err);

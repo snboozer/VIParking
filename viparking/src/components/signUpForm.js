@@ -44,7 +44,6 @@ export const SignUpForm = () => (
       <Form.Group as={Col} controlId="formGridHandicap">
         <Form.Label>HandiCap Number</Form.Label>
         <Form.Control placeholder="HandiCap #" />
-        <Form.Control />
       </Form.Group>
     </Form.Row>
 
