@@ -38,11 +38,12 @@ export const SignUpForm = () => (
     <Form.Row>
       <Form.Group as={Col} controlId="formGridPlate">
         <Form.Label>License Plate Number</Form.Label>
-        <Form.Control />
+        <Form.Control placeholder="Lcense Plate #" />
       </Form.Group>
 
       <Form.Group as={Col} controlId="formGridHandicap">
-        <Form.Label>HandiCap#</Form.Label>
+        <Form.Label>HandiCap Number</Form.Label>
+        <Form.Control placeholder="HandiCap #" />
         <Form.Control />
       </Form.Group>
     </Form.Row>
