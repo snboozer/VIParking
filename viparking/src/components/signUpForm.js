@@ -5,12 +5,12 @@ import { Form, Col, Button } from 'react-bootstrap'
 export const SignUpForm = () => (
   <Form>
     <Form.Row>
-    <Form.Group as={Col} controlId="formGridName">
+    <Form.Group as={Col} controlId="formGridFirstName">
       <Form.Label>First Name</Form.Label>
       <Form.Control placeholder="John" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridName">
+    <Form.Group as={Col} controlId="formGridLastName">
       <Form.Label>Last Name</Form.Label>
       <Form.Control placeholder="Smith" />
     </Form.Group>
@@ -41,12 +41,12 @@ export const SignUpForm = () => (
         <Form.Control placeholder="Example: 2006" />
       </Form.Group>
 
-      <Form.Group as={Col} controlId="formGridHandicap">
+      <Form.Group as={Col} controlId="formGridMake">
         <Form.Label>Car Make</Form.Label>
         <Form.Control placeholder="Example: Nissan" />
       </Form.Group>
 
-      <Form.Group as={Col} controlId="formGridHandicap">
+      <Form.Group as={Col} controlId="formGridModel">
         <Form.Label>Car Model</Form.Label>
         <Form.Control placeholder="Example: Maxima" />
       </Form.Group>
@@ -64,7 +64,7 @@ export const SignUpForm = () => (
       </Form.Group>
     </Form.Row>
 
-    <Button href="/Choices" variant="light" type="submit">
+    <Button href="/Choices" variant="light" type="signUpSubmit">
       Submit
   </Button>
   </Form>
