@@ -6,8 +6,13 @@ export const SignUpForm = () => (
   <Form>
     <Form.Row>
     <Form.Group as={Col} controlId="formGridName">
-      <Form.Label>Name</Form.Label>
-      <Form.Control placeholder="John Smith" />
+      <Form.Label>First Name</Form.Label>
+      <Form.Control placeholder="John" />
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridName">
+      <Form.Label>Last Name</Form.Label>
+      <Form.Control placeholder="Smith" />
     </Form.Group>
 
       <Form.Group as={Col} controlId="formGridEmail">
@@ -30,10 +35,22 @@ export const SignUpForm = () => (
       </Form.Group>
     </Form.Row>
 
-    <Form.Group controlId="formGridCarType">
-      <Form.Label>Car Year, Make and Model</Form.Label>
-      <Form.Control placeholder="2006 Nissan Maxima" />
-    </Form.Group>
+    <Form.Row>
+      <Form.Group as={Col} controlId="formGridPlate">
+        <Form.Label>Car Year</Form.Label>
+        <Form.Control placeholder="Example: 2006" />
+      </Form.Group>
+
+      <Form.Group as={Col} controlId="formGridHandicap">
+        <Form.Label>Car Make</Form.Label>
+        <Form.Control placeholder="Example: Nissan" />
+      </Form.Group>
+
+      <Form.Group as={Col} controlId="formGridHandicap">
+        <Form.Label>Car Model</Form.Label>
+        <Form.Control placeholder="Example: Maxima" />
+      </Form.Group>
+    </Form.Row>
 
     <Form.Row>
       <Form.Group as={Col} controlId="formGridPlate">
