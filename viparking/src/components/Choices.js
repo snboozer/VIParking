@@ -1,5 +1,5 @@
 import React from 'react';
-import { DropdownButton, Dropdown, InputGroup, Form } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 
 class Choices extends React.Component{
 state={
@@ -22,21 +22,6 @@ render(){
         <option>Atlanta</option>
       </Form.Control>
     </Form.Group>
-
-    <InputGroup>
-
-      <DropdownButton
-        as={InputGroup.Append}
-        variant="outline-secondary"
-        title="Choose a Garage"
-        id="input-group-dropdown-2"
-      >
-        <Dropdown.Item href="#">Garage 1</Dropdown.Item>
-        <Dropdown.Item href="#">Garage 2</Dropdown.Item>
-        <Dropdown.Item href="#">Garage 3</Dropdown.Item>
-        
-      </DropdownButton>
-    </InputGroup>
   </>
 )
 }

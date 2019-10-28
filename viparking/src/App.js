@@ -6,6 +6,7 @@ import SignUpForm from './components/signUpForm';
 import Choices from './components/Choices';
 import ChooseSpot from './components/ChooseSpot';
 import NoMatch from './components/NoMatch';
+import ChooseGarage from './components/ChooseGarage';
 import Layout from './components/layout';
 // import Parking from './Parking.js';
 
@@ -22,6 +23,7 @@ class App extends Component{
           <Route path="/ChooseSpot" component={ChooseSpot} />
           {/* <Route path="/Parking" component={Parking} /> */}
           <Route componont= {NoMatch} />
+          <Route path="/ChooseGarage" component={ChooseGarage} />
           </Switch>
         </Router>
         </Layout>
