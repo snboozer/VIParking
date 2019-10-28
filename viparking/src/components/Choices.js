@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form } from 'react-bootstrap'
+import { Form, Button, ButtonToolbar } from 'react-bootstrap'
 
 class Choices extends React.Component{
 state={
@@ -21,6 +21,12 @@ render(){
         <option>New York</option>
         <option>Atlanta</option>
       </Form.Control>
+      <br></br>
+      <ButtonToolbar>
+        <Button href="/ChooseGarage" variant="light" type="submitCity">
+      Submit
+  </Button>
+</ButtonToolbar>
     </Form.Group>
   </>
 )
