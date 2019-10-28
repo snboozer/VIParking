@@ -21,9 +21,10 @@ class App extends Component{
           <Route path="/SignUpForm" component={SignUpForm} />
           <Route path="/Choices" component={Choices} />
           <Route path="/ChooseSpot" component={ChooseSpot} />
+          <Route path="/ChooseGarage" component={ChooseGarage} />
           {/* <Route path="/Parking" component={Parking} /> */}
           <Route componont= {NoMatch} />
-          <Route path="/ChooseGarage" component={ChooseGarage} />
+          
           </Switch>
         </Router>
         </Layout>
